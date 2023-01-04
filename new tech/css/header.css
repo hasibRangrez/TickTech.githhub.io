@@ -1,0 +1,157 @@
+/* -------------header-------------- */
+#header{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.header .logo{
+    width: 100px;
+}
+
+
+
+.logo img{
+    width: 100%;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: .5s;
+}
+
+.nav li:last-child{
+    margin: revert;
+}
+
+.nav li a{
+    color: var(--first--color);
+}
+
+.nav li:hover{
+    scale: 1.2;
+}
+
+
+.nav li a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: var(--first--color);
+    left: 0;
+    bottom: -5px;
+    transition: .5s;
+}
+
+#active::after{
+    width: 100%;
+}
+
+
+
+.nav li a:hover::after{
+    width: 100%;
+}
+
+
+.contact-btn{
+    background-image: linear-gradient(var(--first--color),var(--first--color--alt));
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+
+/* css for small screens 763 to 1200 px */
+
+
+@media screen and (min-width:763px) and (max-width:1200px){
+    .nav li{
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: .5s;
+    }
+
+}
+
+
+
+/* css for small screens 763px */
+
+
+@media screen and (max-width:763px) {
+
+
+    #header{
+        margin: 0 0;
+        background-color: white;
+        position: fixed;
+        right: 0;
+        top: 0px;
+        height: 100vh;
+        display: block;
+        width: 200px;
+        box-shadow: -1px 0px 10px 2px rgb(61, 60, 60);
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+
+
+    .header .logo{
+        width: 100px;
+        margin-top: 30px;
+        margin-left: 45px;
+        display: none;
+    }
+    
+
+    .nav li,
+    .nav li:last-child{
+        display: block;
+        margin: 50px 50px;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        transition: .5s;
+        
+    }
+    
+
+    #active::after{
+        width: 60%;
+    }
+    
+    
+    
+    .nav li a:hover::after{
+        width: 80%;
+    }
+
+    .header-hide{
+        transform: translateX(210px); 
+        transition: transform ease-in-out .5s; 
+    }
+
+    .header-show{
+        transform: translateX(0);      
+        transition: transform ease-in 1.5s;
+    }
+    
+
+
+    
+}
+
+
+

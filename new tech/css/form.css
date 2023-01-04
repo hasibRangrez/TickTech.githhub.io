@@ -1,0 +1,148 @@
+/* =========contact-form===========  */
+
+
+#contact-form{
+    margin-top: 50px;
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(var(--first--color),var(--first--color--alt),var(--first--color));
+    color: white;
+}
+
+.contact-form-header {
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+
+
+.form-content{
+    margin: 50px 15%;
+    height: 60vh;
+    display: flex;
+    gap: 100px;
+    
+}
+
+.left{
+    width: 20%;
+}
+
+.left .mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+.mail .email-icon{
+    font-size: 40px;
+    
+}
+
+.left .phone{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+
+.phone .phone-icon{
+    font-size: 30px;
+}
+
+.phone-no{
+    margin-left: -10px;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+    font-size: 35px;
+    margin-top: 30px;  
+}
+
+.social-media-icon{
+    color: white;
+}
+
+
+.right{
+    width: 70%;
+    margin-left: 50px;
+}
+
+form input,
+form textarea{
+    display: block;
+    border-radius: 5px;
+    background-color:rgb(241, 238, 238);
+    width: 100%;
+    margin: 0 0 40px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+input[type],
+textarea[name]{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+form input:focus,
+form textarea:focus{
+    background-color: rgb(241, 238, 238),80%;
+    scale: 1.05;
+}
+
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(0, 0, 255,0%);
+    font-size: 15px;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.btn:hover{
+    scale: 1.1;
+    color: aqua;
+
+}
+
+.submit-btn{
+    color: white;
+    border: 3px solid white;
+    padding: 5px 20px;
+    
+}
+
+.submit-btn:hover{
+    background-color: rgba(71, 71, 227, 0.8);
+    border: 3px solid aqua;
+    
+}
+
+
+/* css for smaller screens650 */
+
+@media screen and (max-width:650px)
+{
+    .left{
+        display: none;
+    }
+
+
+    .right{
+        width: 100%;
+        margin-left: 50px;
+        margin-left: 0;
+    }
+    
+}

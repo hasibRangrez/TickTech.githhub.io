@@ -1,0 +1,64 @@
+#home{
+    height: 80vh;
+    width : 100%;
+    background-image: url('/Image/231.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+    
+}
+
+
+.home-content{
+    margin: 0 10%;
+}
+
+.home-title{
+    margin-top: -20px;
+    padding-top: 10px;
+    width: 35%;
+    
+}
+
+.home-subtitle{
+    margin-top: 50px;
+    width: 35%;
+}
+
+
+
+/* css for small screens 763 to 1200 px */
+
+
+@media screen and (max-width:900px){
+    .home-title{
+        width: 80%;
+    }
+
+
+    .home-subtitle{
+        width: 80%;
+    }
+    
+
+}
+
+
+/* css for small screens */
+
+@media screen and (max-width:763px) {
+    .home-title{
+        width: 100%;
+    }
+
+
+    .home-subtitle{
+        width: 100%;
+    }
+    
+}
+
+
+
+
